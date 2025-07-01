@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+       
+    <link href="a.css" rel="stylesheet" type="text/css" media="all">
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon-96x96.png"/>
+      
+  </head>
+    <body>
+  
+     <header>
+         <!--Menu Hamburguesa-->
+          <div class="da">
+           <nav>
+             <input type="checkbox" id="menu">
+             <label for="menu"> ☰ </label>
+              <ul>
+                <li> <a href="index.html">Inicio</a>   </li>
+                <li> <a href="page1.html">Album</a>    </li>
+                <li> <a href="page2.html">Galeria</a>  </li>
+                <li> <a href="page3.html">Contacto</a> </li>
+             </ul>
+            </nav>
+          </div>
+       <!--Menu Hamburguesa-->
+       
+       <!-- Menu Principal-->
+       <div class="db">
+      <nav>
+        <ul class="ulPrincipal">
+          <li>
+             <a href="a.html">Inicio</a>
+          </li>
+          <li>
+             <a href="page1.html">Album</a>
+          </li>
+          <li>
+           <a href="page2.html">Galeria</a>
+          </li>
+          <li>
+           <a href="page3.html">Contacto</a>
+          </li>
+        </ul> 
+      </nav>
+      </div> 
+     </header>
+        <section>
+            <img class="im" src="images/contact.png">
+        </section>
+      
+    <div class="df">  
+      <div class="container">
+       <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Apellido..">
+           
+    <label for="lname">Email</label>
+    <input type="mail" id="mail" name="mail" placeholder="Correo electronico mail@mail.com..">       
+
+    <label for="country">Country</label>
+    <select class="sel" id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+        </form>
+      </div>
+    </div>
+    
+      <footer>
+       <div class="f">
+        <p>&copy; 1973 Queen. Todos los derechos reservados.</p>
+        </div>
+     </footer>
+    
+  </body>
+</html>

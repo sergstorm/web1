@@ -1,0 +1,360 @@
+body
+{
+  background-color: black;
+  margin: 0;
+;
+}
+.da
+   {
+      display: block;
+      position: fixed;
+   }
+.db
+   {
+     margin: 30px;
+   } 
+.f
+   {
+     background-color: #4665a8;
+      text-align: center;
+      border-radius: 2px;
+   }   
+.f p{
+  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: pink;
+  padding: 10px;
+  margin: 0;
+}
+ /* Menu Hamburguesa*/
+
+
+ul{
+  text-align: left;
+  display: none;
+  font-size: 40px;
+  font-family: 'Lucida Sans';
+}
+
+input:checked  ~ ul{
+  display:block;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  background-color: #46a2f2;
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+label:hover{
+  background: green;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+  background: #34eba8; 
+}
+
+ul .da{
+  padding: 0;
+  width: 500px;
+  margin: 40px;
+  border-color: black;
+  border-radius: 5px;
+  border-width:3px;
+  display: block;
+}
+
+
+li {
+  display: inline-block;
+  background: #c034eb;
+  margin: 20px;
+  padding: 50px;
+  list-style: none;
+  border-bottom: 2px solid #c034eb;
+  border: 2px;
+  border-radius: 15px;
+  text-size-adjust: 40px;
+  
+}
+ol li {
+  display: inline-block;
+  background: #c034eb;
+  margin: 20px;
+  padding: 5px;
+  list-style: none;
+  border-bottom: 2px solid #c034eb;
+  border: 2px;
+  border-radius: 7px;
+  text-size-adjust: 40px;
+  
+}
+
+.da li{
+  display: block;
+  background: #a1f8c5;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 2px solid #34ebbd;
+  border: 2px;
+  border-radius: 5px;
+}
+
+ul .da{
+  display: block;
+  background: #e4c9ec;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 2px solid #98909b;
+  border: 2px;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+  filter: brightness(110%);
+}
+
+/* Menu principal*/
+.ulPrincipal
+  {
+   display: flex; 
+   justify-content: center;
+  }
+.liP
+   {
+     color: rgb(71, 71, 2);
+     display: block;
+     margin: 50px;
+     
+   }  
+header {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+    background-color: #880e82;
+    
+    /*background-image: url('/images/s2.jpg');*/
+   
+    padding: 20px;
+    /*text-align: center;*/
+  
+}
+
+h1 {
+    text-align: center;  
+   font-size: 150px;
+   color: #bdb22a;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-shadow: 2px 2px #ff0000;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 700;
+    margin: 10;
+}
+
+h2 
+{
+    font-family: "Edu NSW ACT Cursive", cursive;
+  text-align: center;
+  font-weight: 400;
+  font-size: 120px;
+  margin: 10;
+  color: rgb(235 231 89);
+  text-shadow: 2px 2px #ff9900;
+}
+/* GALERY */
+.gallery 
+ {
+     background-color: black;
+  display: flex;                       /* Para organizar las imágenes en una fila */
+  flex-wrap: wrap;                    /* Para que las imágenes se coloquen en líneas diferentes si no hay espacio */
+  justify-content: space-around;      /* Para distribuir el espacio entre las imágenes */
+  align-items: center;   
+  float: right 40%;/* Para alinear las imágenes verticalmente */
+ }
+
+.gallery img 
+ {
+  width: 400px;                       /* Ancho de las imágenes */
+  height: auto;                       /* Altura automática para mantener la relación de aspecto */
+  margin: 12px;                      /* Espacio entre las imágenes */
+  border: 2px solid #ccc;           /* Borde para las imágenes */
+  border-radius: 5px;
+  cursor: pointer;                   /* Cambia el cursor al pasar sobre la imagen */
+ }
+/*GALERY*/
+  /* Style inputs with type="text", select elements and textareas */
+
+input[type=text], select, textarea {
+  width: 500px; /* Full width */
+  padding: 16px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 8px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 16px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+input[type=mail] {
+  width: 500px; /* Full width */
+  padding: 16px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 8px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 16px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  font-size: xx-large;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none7px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+    text-align: center;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #af2980;
+  padding: 20px;
+  text-align: -webkit-center;
+}
+.df label {
+  box-sizing: border-box;
+  display: table-cell;
+  border: 2px solid yellow;
+  border-radius: 15px;
+  width: 500px;
+  height: 70px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  background-color: #46a2f2;
+  margin: 30px;
+    font-size: 40px;
+    padding: 20px;
+}
+.df input {
+  display: block;
+    width: 500px;
+}
+.im
+{
+    width: 100%;
+}
+.sel
+{
+    width: 500px;
+}
+section {
+  
+  margin: 0 1.5%;
+  
+    margin-left: 20px;
+    align-content: center;
+    text-align: center;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 60%;
+}
+footer {
+  clear: both;
+    margin-bottom: 0;
+}
+
+.tracklist ol {
+    list-style-type: decimal;
+    display: inline-grid;
+    text-align: center;
+}
+
+.tracklist li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+h3
+{
+    font-size: 30px;
+    text-align: center;
+}
+audio
+{
+    height: 20px;
+}
+.main
+{
+  background-color: black;
+    margin: -40px;
+    margin-bottom: -300px;
+}
+.sect
+{
+align-content: center;
+    background-color: #837e45;
+    margin: 0;
+    font-size: xx-large;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+}
+.si
+{
+    margin: 0;
+    margin-left: 0;
+    background-image: url(images/qqa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: local;
+}
+.album-cover
+{
+    margin: 100px;
+    
+}
+h4
+{
+
+}
